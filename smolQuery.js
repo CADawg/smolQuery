@@ -1,6 +1,6 @@
 "use strict";
 
-// smolQuery v1 (c) Conor https://github.com/Snaddyvitch-Dispenser 11/11/2020
+// smolQuery v1 (c) Conor https://is.gd/sQuery 11/11/2020
 // Licenced Under MIT
 
 function sQuery(q) {
@@ -14,7 +14,7 @@ function sQuery(q) {
     return elementsFunction;
   }
 
-  return v;
+  return elementsFunction;
 }
 
 s.request = function(method = "POST", url, data = "", completed = r => r, config = {}){
