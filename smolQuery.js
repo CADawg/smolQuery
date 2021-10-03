@@ -31,7 +31,7 @@ s.request = function(method = "POST", url, data = "", completed = r => r, config
   } else {
     finalURL = url;
   }
-  fetch(finalURL, {method: "GET", ...config}).then(r => {completed(r)}).catch(r => completed(r));
+  fetch(finalURL, {method: method, ...config}).then(r => {completed(r)}).catch(r => completed(r));
 }
 
 let isDictionary = (t) => {return (!(t instanceof FormData || t instanceof Blob || t instanceof URLSearchParams) && t instanceof Object)}
